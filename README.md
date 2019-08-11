@@ -17,4 +17,5 @@ Enable maximum cpu's freq on Linux
 <b>Note</b>
 
 You can add this skript on startup, use cron on startup.
-If you have another count of cpu's, just edit skript. Add, change or remove /sys/devices/system/cpu/cpu3 <--this line.
+<br>If you have another count of cpu's, just edit skript.
+<br>Add, change or remove /sys/devices/system/cpu/cpu3 <--this line.
