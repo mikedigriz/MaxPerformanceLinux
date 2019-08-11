@@ -1,20 +1,20 @@
 # MaxPerformanceLinux
 Enable maximum cpu's freq on Linux
 
-Installation
+<b>Installation</b>
 
 1. git clone https://github.com/mixaxdd/MaxPerformanceLinux
 2. chmode +x  cpuperformance.sh cpupowersave.sh
 
-Run
+<b>Run</b>
 
 ./cpuperformance.sh
 
-Disable
+<b>Disable</b>
 
 ./cpupowersave.sh
 
-Note
+<b>Note</b>
 
-You can add this skript on startup, use cron.
+You can add this skript on startup, use cron on startup.
 If you have another count of cpu's, just edit skript. Add, change or remove /sys/devices/system/cpu/cpu3 <--this line.
