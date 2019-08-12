@@ -7,13 +7,13 @@ Enable maximum cpu's freq on Linux
 2. cd MaxPerformanceLinux && chmode +x cpuperformance.sh cpupowersave.sh
 ```
 <b>Run</b>
-
+```
 ./cpuperformance.sh
-
+```
 <b>Disable</b>
-
+```
 ./cpupowersave.sh
-
+```
 <b>Note</b>
 
 You can add this skript on startup, use cron on startup.
