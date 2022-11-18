@@ -1,25 +1,10 @@
 #!/bin/bash
-#Управление режимом производительности
+#Задание производительности процессора
 echo "Выявляем текущую частоту процессоров"
 grep MHz /proc/cpuinfo
 sleep 1
 echo "Устанавливается режим максимального энергосбережения"
-echo "CPU0 - Powersave"
-echo "powersave" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-sleep 1
-echo "CPU1 - Powersave"
-echo "powersave" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
-sleep 1
-echo "CPU2 - Powersave"
-echo "powersave" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
-sleep 1
-echo "CPU3 - Powersave"
-echo "powersave" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
-echo "powersave" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-echo "powersave" > /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor
-echo "powersave" > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor
-echo "powersave" > /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
-sleep 1
+ls /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor | xargs -I core bash -c "echo powersave > core"
 echo "Успешно Выполнено!"
 sleep 1
 echo "Финальная проверка говернора"
