@@ -3,7 +3,7 @@ Enable maximum cpu's freq on Linux cores.
 
 <b>Installation</b>
 ```
-1. git clone https://github.com/mixaxdd/MaxPerformanceLinux
+1. git clone https://github.com/mikedigriz/MaxPerformanceLinux
 2. cd MaxPerformanceLinux && chmod +x cpuperformance.sh cpupowersave.sh
 3. ./cpuperformance.sh
 ```
